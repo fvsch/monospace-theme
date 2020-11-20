@@ -1,0 +1,11 @@
+{
+  "name": "monospace-theme",
+  "scripts": {
+    "build": "npm run build:css && npm run build:html",
+    "build:css": "sass src/theme.scss --style=expanded --no-charset --no-source-map > src/cache/theme.css",
+    "build:html": "php src/theme.php > theme.html"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0"
+  }
+}
